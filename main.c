@@ -5,10 +5,8 @@
 
 int main()    
 {  
-    int (*p_arr)[N];  ///////////////////////////static variable
+    int (*p_arr)[N]; //global variable
     while (1){
-        // printf("ENTER CHAR TO START: ");
-
         char comand;
         scanf("%c", &comand);
     switch(comand)
@@ -28,10 +26,8 @@ int main()
         case 'D':
             return 0;
         default:
-            // printf("\n---- NONE ----\n");
             break;
     }
 }
-    // printf("***** END *****");
 return 0;
 }

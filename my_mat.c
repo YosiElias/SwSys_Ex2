@@ -24,6 +24,7 @@ int (*(getArray)())[N]{
     return array;
 }
 
+//  For self chechs:
 // int printArr(int array[N][N]){
 //     /* output each array element's value */
 //     // printf("%p", &array[0][0]);
@@ -45,16 +46,6 @@ int (*(getArray)())[N]{
  
 
 int floydAlgo(int (*arr)[N]){
-    // int dist[N][N]; //i, j, k, 
-    // for (int i=0; i<N; i++)  
-    //    {
-    //        for (int j=0; j<N; j++)  
-    //        {
-    //         dist[i][j] =  *(*(arr + i) + j);  //arr[i][j];   // *arr;
-    //         // arr++;
-    //        }
-    //    }
-
     for (int k=0; k<N; k++) 
     {
        for (int i=0; i<N; i++)  
@@ -84,11 +75,6 @@ int isConect(int (*arr)[N]){
     int i, j;
     scanf("%d", &i);
     scanf("%d", &j);
-    // if (i==j)
-    // {
-    //     printf("False");
-    //     return 1;
-    // }
     if (*(*(arr + i) + j) != 0  ||  *(*(arr + j) + i) != 0)     //graf 'lo mechuvan'
         printf("True");
     else
@@ -100,11 +86,6 @@ int shortest(int (*arr)[N]){
     int i, j;
     scanf("%d", &i);
     scanf("%d", &j);
-    // if (i==j)
-    // {
-    //     printf("-1");
-    //     return 1;
-    // }
     if (*(*(arr + i) + j) != 0  ||  *(*(arr + j) + i) != 0)
         if ((*(*(arr + i) + j) < *(*(arr + j) + i))  &&  (*(*(arr + i) + j) != 0)) //print the minimum 
             printf("%d", *(*(arr + i) + j));
