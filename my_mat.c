@@ -24,22 +24,22 @@ int (*(getArray)())[N]{
     return array;
 }
 
-int printArr(int array[N][N]){
-    /* output each array element's value */
-    // printf("%p", &array[0][0]);
-    // printf("\n%d\n", array[0][0]);
+// int printArr(int array[N][N]){
+//     /* output each array element's value */
+//     // printf("%p", &array[0][0]);
+//     // printf("\n%d\n", array[0][0]);
 
-   for(int i=0; i<N;i++)
-    {
-        for(int j=0; j<N;j++)
-        {
-            printf("\t%d", array[i][j]);  //Element[%d][%d] = 
+//    for(int i=0; i<N;i++)
+//     {
+//         for(int j=0; j<N;j++)
+//         {
+//             printf("\t%d", array[i][j]);  //Element[%d][%d] = 
 
-        }
-        printf("\n");
-   }
-    return 1;
-}
+//         }
+//         printf("\n");
+//    }
+//     return 1;
+// }
 
 
  
@@ -114,36 +114,3 @@ int shortest(int (*arr)[N]){
         printf("-1");
 return 1;
 }
-
-
-
-
-// int main () {
-//     // int graph[N][N] = { {0,   5,  0, 10},
-//     //                     {0, 0,   3, 0},
-//     //                     {0, 0, 0,   1},
-//     //                     {0, 0, 0, 0}
-//     //                   };
-
-//     // int i, j;
-//     // scanf("%d, %d", &i, &j);
-//     // printf("%d",i);
-//     // int *arr;
-//     int (*arr)[N];
-//     // arr = graph;
-//     arr = getArray();
-//     printf("\n\n");
-    
-//     floydAlgo(arr);
-    
-//     printf("numbers:\n");
-//     isConect(arr);
-
-//     printf("\nnumbers:\n");
-//     shortest(arr);
-//     // printf("\n%d\n", *(*(arr + 1) + 2));
-//     arr++;
-//     // printf("\n%d\n", *arr);
-//     // printf("\n%p\n", &arr);
-//     printf("\n\n");
-// }

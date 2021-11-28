@@ -26,12 +26,12 @@ int main()
             printf("\n");
             break;
         case 'D':
-            return 1;
+            return 0;
         default:
             // printf("\n---- NONE ----\n");
             break;
     }
 }
-printf("***** END *****");
+    // printf("***** END *****");
 return 0;
 }
