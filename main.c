@@ -33,5 +33,5 @@ int main()
     }
 }
 printf("***** END *****");
-return 1;
+return 0;
 }
